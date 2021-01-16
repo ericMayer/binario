@@ -1,0 +1,47 @@
+.container {
+  margin: 60px;
+
+  @media screen and (max-width: 768px) {
+    margin: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin: 40px 20px;
+  }
+}
+
+.title {
+  font: var(--font-title);
+  color: var(--dark);
+}
+
+.cancel {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 18px;
+  border: 1px solid var(--dark);
+  background: transparent;
+  color: var(--dark);
+  font: var(--font-text);
+  outline: var(--white-full);
+  margin-right: 20px;
+}
+
+.confirm {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 18px;
+  border: 1px solid var(--dark);
+  background: var(--menu);
+  font: var(--font-text);
+  font-weight: 700;
+  outline: var(--menu);
+}
+
+.disabled {
+  background: var(--white);
+  cursor: default;
+  pointer-events: none;
+}

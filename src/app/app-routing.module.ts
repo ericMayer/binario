@@ -8,6 +8,12 @@ const routes: Routes = [
   {
     path: '',
     component: PageComponent,
+    children: [
+      {
+        path: 'calculo-binario',
+        loadChildren: () => import('./calculo-binario/calculo-binario.module').then((m) => m.CalculoBinarioModule)
+      }
+    ]
   }
 
 ];
