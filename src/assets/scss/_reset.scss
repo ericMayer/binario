@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, img, ul, li, a, button, p, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-size: unset;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
