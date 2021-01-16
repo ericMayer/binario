@@ -1,0 +1,10 @@
+.sidenav-container.mat-drawer-container {
+  position: initial;
+  background: var(--white-full);
+}
+
+.sidenav {
+  width: 100px;
+  background: linear-gradient(to bottom, var(--orange) 0%, var(--red) 100%);
+}
+

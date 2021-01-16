@@ -1,0 +1,12 @@
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
+
+.title {
+  font: var(--font-menu);
+  color: var(--dark);
+}

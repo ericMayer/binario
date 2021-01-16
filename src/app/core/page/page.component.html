@@ -1,0 +1,19 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav mode="side" opened class="sidenav" [autoFocus]="false">
+    <app-menu [menu]="menu"></app-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <app-header></app-header>
+
+    <main>
+
+      <router-outlet></router-outlet>
+
+    </main>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

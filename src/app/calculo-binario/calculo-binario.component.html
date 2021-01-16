@@ -1,0 +1,45 @@
+<section class="container">
+
+  <h1 class="title">Operação de dois números binários</h1>
+
+  <mat-form-field appearance="fill" class="form-field">
+
+    <mat-label>Selecione um operador:</mat-label>
+
+    <mat-select required [(ngModel)]="calculo.operador">
+
+      <mat-option *ngFor="let operador of operadores" [value]="operador" >
+        {{ operador }}
+      </mat-option>
+
+    </mat-select>
+
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+
+    <mat-label>Primeiro Binário</mat-label>
+
+    <textarea type="text" matInput [(ngModel)]="calculo.numeroUm"  [patterns]="customPatterns" mask="0*"></textarea>
+
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+
+    <mat-label>Segundo Binário</mat-label>
+
+    <textarea type="text" matInput [(ngModel)]="calculo.numeroDois"  [patterns]="customPatterns" mask="0*"></textarea>
+
+  </mat-form-field>
+
+  <div class="action-buttons">
+
+    <button class="cancel" (click)="back()">Cancelar</button>
+
+    <button class="confirm" [class.disabled]="formInvalid()" (click)="calcular()">Calcular</button>
+
+  </div>
+
+  <p *ngIf="resultado" class="resultado"><strong>Resultado:</strong> {{ resultado }}</p>
+
+</section>
