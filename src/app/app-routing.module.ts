@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PageComponent } from './core/page/page.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -13,7 +12,12 @@ const routes: Routes = [
         path: 'calculo-binario',
         loadChildren: () => import('./calculo-binario/calculo-binario.module').then((m) => m.CalculoBinarioModule)
       }
-    ]
+    ],
+  },
+  {
+    path: '**',
+    component: PageComponent,
+    redirectTo: ''
   }
 
 ];
